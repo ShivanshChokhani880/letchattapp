@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Room Slide</title>
+        <script src = "letschat_room.js"></script>
+        <link rel = "stylesheet" href = "letschatroom.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+        <center>
+            <h1 class="header">	
+                Lets chat App
+                <sup>
+                    <img src= "download.png">
+                </sup>
+            </h1>
+            <h3 id = "user_name" class="color_black"></h3>
+            <div class="form-group input_div_room_page">
+                <label>#Add Room:</label>
+            <input type = "text" id= "room_name" class = "form-control" placeholder="#room name">
+            </div>
+            <button onclick = "addRoom()" class="btn btn-success">#Add Room</button>
+            <h3 id = "rooms" class="color_black">Room : </h3>
+        </center>
+    </body>
+</html>
